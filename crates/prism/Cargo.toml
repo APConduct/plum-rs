@@ -5,3 +5,4 @@ edition = "2018"
 
 [dependencies]
 serde = {workspace = true}
+parking_lot = {workspace = true}

@@ -32,15 +32,15 @@ impl Command {
     pub fn new(
         id: impl Into<String>,
         title: impl Into<String>,
-        icon: Option<String>,
-        subtitle: Option<String>,
+        // icon: Option<String>,
+        // subtitle: Option<String>,
         handler: impl CommandHandler + 'static,
     ) -> Self {
         Self {
             id: id.into(),
             title: title.into(),
-            icon,
-            subtitle,
+            icon: None,
+            subtitle: None,
             keywords: Vec::new(),
             handlers: Arc::new(handler),
         }
