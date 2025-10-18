@@ -28,7 +28,7 @@ impl Render for CounterWidget {
                     .text_color(rgb(0xffffff))
                     .cursor_pointer()
                     .child("Click me!")
-                    .on_mouse_down(
+                    .on_mouse_up(
                         gpui::MouseButton::Left,
                         cx.listener(|this, _event, _, _| {
                             this.count += 1;
